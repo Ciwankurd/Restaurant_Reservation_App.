@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="s351927.oslomet.mappe2">
+
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="s351927.oslomet.mappe2.permission" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <permission android:name="s351927.oslomet.mappe2.permission" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/invitasjon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/invitasjon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Mappe2"
+        tools:ignore="ExtraText">
+        //Resturant provider
+        <provider
+            android:name="s351927.oslomet.mappe2.ContentProvider.ResturantContentProvider"
+            android:authorities="s351927.oslomet.mappe2"
+            android:enabled="true"
+            android:exported="true"
+            android:readPermission="s351927.oslomet.mappe2.permission"
+            android:writePermission="s351927.oslomet.mappe2.permission" />
+
+        //Receiver som implementere en service
+        <receiver android:name=".Service.NotificationBrodcastReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="s351927.oslomet.mappe2.notificationbrodcastreceiver" />
+            <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+
+        <service android:name="s351927.oslomet.mappe2.Service.PeriodiskService" />
+        <service android:name="s351927.oslomet.mappe2.Service.NotifictionService" />
+        <activity
+            android:name=".Activtiy.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activtiy.PersonActivity"
+            android:parentActivityName=".Activtiy.MainActivity">
+        </activity>
+        <activity android:name=".Activtiy.ResturantActivity"
+            android:parentActivityName=".Activtiy.MainActivity">
+        </activity>
+        <activity android:name=".Activtiy.MeetingActivity"
+            android:parentActivityName=".Activtiy.MainActivity">
+        </activity>
+        <activity android:name=".Activtiy.SettingActivity"
+            android:parentActivityName=".Activtiy.MainActivity">
+        </activity>
+        <activity android:name=".Activtiy.ResturantListActivity"
+            android:parentActivityName=".Activtiy.ResturantActivity">
+        </activity>
+        <activity android:name=".Activtiy.BestillingActivity"
+            android:parentActivityName=".Activtiy.ResturantActivity">
+        </activity>
+        <activity android:name=".Activtiy.VisBestillingList"
+            android:parentActivityName=".Activtiy.BestillingActivity">
+        </activity>
+        <activity android:name=".Activtiy.PersonList"
+            android:parentActivityName=".Activtiy.PersonActivity">
+        </activity>
+    </application>
+
+</manifest>

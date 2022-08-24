@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/WhiteSmoke">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <TextView
+                android:id="@+id/Select_Resturant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="16dp"
+                android:hint="@string/velg_resturant"
+                android:textSize="20sp"
+                app:drawableEndCompat="@android:drawable/arrow_down_float" />
+
+
+            <TextView
+                android:id="@+id/Select_Personer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="25dp"
+                android:drawablePadding="16dp"
+                android:hint="@string/velg_personer"
+                android:textSize="20sp"
+                app:drawableEndCompat="@android:drawable/arrow_down_float" />
+
+            <TextView
+                android:id="@+id/et_select_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/velg_dato"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_select_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="25dp"
+                android:hint="@string/velg_tid"
+                android:textSize="20sp" />
+
+
+            <Button
+                android:id="@+id/send"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:layout_marginBottom="20dp"
+                android:onClick="sendBestilling"
+                android:text="@string/bestille"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/SendSMS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="15dp"
+                android:onClick="SendSMS"
+                android:text="@string/send_sms"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/Vis_Alle_Bestilling"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="15dp"
+                android:onClick="VisAlle"
+                android:text="@string/vis_bestillinger"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

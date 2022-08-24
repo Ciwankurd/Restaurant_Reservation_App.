@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Hei/AndroidStudioProjects/Mappe2/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/Hei/AndroidStudioProjects/Mappe2/app/src/main/res/layout/bestilling.xml" value="0.33" />
+        <entry key="..\:/Users/Hei/AndroidStudioProjects/Mappe2/app/src/main/res/layout/fragment_resturant.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Hei/AndroidStudioProjects/Mappe2/app/src/main/res/layout/fragment_resturant_list.xml" value="0.1" />
+        <entry key="..\:/Users/Hei/AndroidStudioProjects/Mappe2/app/src/main/res/layout/lister.xml" value="0.30416666666666664" />
+        <entry key="..\:/Users/Hei/AndroidStudioProjects/Mappe2/app/src/main/res/layout/meeting_layout.xml" value="0.1" />
+        <entry key="..\:/Users/Hei/AndroidStudioProjects/Mappe2/app/src/main/res/layout/person_layout.xml" value="0.11241217798594848" />
+        <entry key="..\:/Users/Hei/AndroidStudioProjects/Mappe2/app/src/main/res/layout/resturant_layout.xml" value="0.25" />
+        <entry key="..\:/Users/Hei/AndroidStudioProjects/Mappe2/app/src/main/res/layout/resturantlist.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Hei/AndroidStudioProjects/Mappe2/app/src/main/res/layout/setting.xml" value="0.30416666666666664" />
+        <entry key="..\:/Users/Hei/AndroidStudioProjects/Mappe2/app/src/main/res/layout/setting_layout.xml" value="0.2015625" />
+        <entry key="..\:/Users/Hei/AndroidStudioProjects/Mappe2/app/src/main/res/layout/spinner_items_layout.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Hei/AndroidStudioProjects/Mappe2/app/src/main/res/layout/vis_bestillinglist.xml" value="0.2046875" />
+        <entry key="..\:/Users/Hei/AndroidStudioProjects/Mappe2/app/src/main/res/layout/vis_resturanter_fragment.xml" value="0.203125" />
+        <entry key="..\:/Users/Hei/AndroidStudioProjects/Mappe2/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.3712962962962963" />
+        <entry key="..\:/Users/Hei/AndroidStudioProjects/Mappe2/app/src/main/res/xml/root_preferences.xml" value="0.25" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

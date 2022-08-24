@@ -1,0 +1,30 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory app:title="Melding">
+
+        <SwitchPreferenceCompat
+            app:key="aktiv"
+            app:title="SMS"
+            android:defaultValue="false"/>
+        <EditTextPreference
+            app:key="Sms_date"
+            app:title="Dato"/>
+        <EditTextPreference
+            app:key="Sms_time"
+            app:title="Tid"
+            app:defaultValue="10:30"/>
+    </PreferenceCategory>
+    <PreferenceCategory app:title="Notifikasjon">
+          <EditTextPreference
+        app:key="Noti_time"
+        app:title="Tid"
+        app:defaultValue="10:30"/>
+    </PreferenceCategory>
+    <PreferenceCategory app:title="Melding">
+    <EditTextPreference
+        app:key="Egen_melding"
+        app:title="Melding"
+        app:defaultValue="Husk! Du har invitasjon"/>
+    </PreferenceCategory>
+</PreferenceScreen>

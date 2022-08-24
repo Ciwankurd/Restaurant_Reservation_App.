@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingVertical="16dp"
+    android:background="@color/WhiteSmoke">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Navn :   👨‍💼"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/Person_navn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Telefonnr. : ☎"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/Person_Telefonnr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ID : 🔑"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/Person_Id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/leggtil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="15dp"
+                android:onClick="LeggtilPerson"
+                android:text="Legg til" />
+
+            <Button
+                android:id="@+id/Oppdate_Person"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:onClick="PersonOppdater"
+                android:text="@string/oppdater_Person" />
+
+            <Button
+                android:id="@+id/visalle_Person"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:onClick="visallePersoner"
+                android:text="Vis Alle" />
+
+            <Button
+                android:id="@+id/Slett_Person"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:onClick="SlettPerson"
+                android:text="@string/slett_person" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

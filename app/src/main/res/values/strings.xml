@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Velkommen</string>
+    <string name="resturanter">Resturanter</string>
+    <string name="personer">Personer</string>
+    <string name="bestilling">Bestilling</string>
+    <string name="innstilling">Innstilling</string>
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="legg_til_person">legg_til</string>
+    <string name="slett_person">slett</string>
+    <string name="vis_alle_Personer">vis_alle</string>
+    <string name="oppdater_Person">oppdater</string>
+    <string name="Person_id">ID :</string>
+    <string name="Person_adresse">Adresse :</string>
+    <string name="Person_telefonnr">Telefonnr. :</string>
+    <string name="Person_navn">Navn :</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="velg_resturant">Velg Restaurant</string>
+    <string name="velg_personer">Velg Personer</string>
+    <string name="velg_dato">Velg Dato   🗓</string>
+    <string name="velg_tid">Velg Tid   🕙</string>
+    <string name="bestille">Bestille</string>
+    <string name="send_sms">Send SMS</string>
+    <string name="vis_bestillinger">Vis Bestillinger</string>
+</resources>
